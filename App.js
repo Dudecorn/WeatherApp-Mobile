@@ -14,19 +14,10 @@ export default class App extends React.Component {
     this.state = {
       main: "Weather: Fetching data...",
       desc: "",
-      icon: 0,
       latitude: null,
       longitude: null,
       source: null,
     }
-  }
-
-  renderImage(){
-    let imageSource;
-
-    return(
-      <Image source={ imageSource } style={{width: 400, height: 400}} />
-    );
   }
 
   componentWillMount(){
@@ -109,9 +100,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    top: '20%',
-  },
-  alignBottom: {
-    top: '90%',
+    top: '10%',
   },
 });
